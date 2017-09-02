@@ -16,7 +16,7 @@ var visualization;
 
 function drawVisualization() {
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1y3Cu4ubCeyXQ1xooNdNoyQjLZ9ev29OXWBiptPoOXQM&output=html&usp=sharing');
-    query.setQuery('SELECT A, B, label A "Tweeted By", B "Tweet"');
+    query.setQuery('SELECT A, B, label A "Tweeted by:", B "Tweet"');
     query.send(handleQueryResponse);
 }
 
