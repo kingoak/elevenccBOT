@@ -3,7 +3,7 @@
  * Google Sheets To HTML v0.9a
  * 
  * To use, simply replace the "tq?key=" value in the
- * URL below with your own unique Google document ID 
+ * URL below with your own unique Google document ID
  * 
  * The Google document's sharing must be set to public
  * 
@@ -15,8 +15,8 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1y3Cu4ubCeyXQ1xooNdNoyQjLZ9ev29OXWBiptPoOXQM&output=html&usp=sharing');
-    query.setQuery();
+    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1y8QRGUT0bb0Wx6lAHbMjNxU7Zs96WDJE9SXRiuQQfJc&output=html&usp=sharing');
+    query.setQuery('SELECT A, B, C, D label A "Duration", B "Song", C "Requested By", D "URL"');
     query.send(handleQueryResponse);
 }
 
